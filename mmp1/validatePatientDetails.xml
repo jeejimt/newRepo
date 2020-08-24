@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+  <test thread-count="5" name="Test1">
+    <parameter name="adminUrl" value="http://96.84.175.78/MMP-Release2-Admin-Build.2.1.000/login.php "></parameter>
+    <parameter name="adminUname" value="Thomas_444"></parameter>
+    <parameter name="adminPword" value="Edison_444"></parameter>
+    <parameter name="patientUrl" value="http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php"></parameter>
+    <parameter name="patientUname" value="ria1"></parameter>
+    <parameter name="patientPword" value="Ria12345"></parameter>
+  
+    <classes>
+      <class name="org.iit.mmp.patientmodule.tests.PatientDetailsTest"/>
+    </classes>
+  </test>
+</suite> 
